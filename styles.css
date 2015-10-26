@@ -1,0 +1,42 @@
+
+/* Styles look like poop, spent an hour moving things around with no results and figured that I hadn't link rel styles sheet - idiot. Got pissed so I moved on*/
+
+
+header {
+  width: 100%;
+  text-align: center;
+  background-color: cyan;
+  color: #fff;
+}
+
+body{
+  background-color: #888;
+}
+
+h1 {
+  display: inline-block;
+  text-align: center;
+}
+
+.main-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+p{
+  text-align: center;
+  color: #fff;
+}
+
+.album img {
+  width: 80%;
+  margin: 0 auto;
+  height: 80%;
+  display: block;
+}
+
+.album {
+  width: 33%;
+  display: inline-block;
+  margin: 0 auto;
+}
