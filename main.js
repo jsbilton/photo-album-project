@@ -1,11 +1,12 @@
 //using a combination of Calvin's Bitter code, notes from Nathan and also this site http://addyosmani.com/blog/building-spas-jquerys-best-friends which is doing a very similar application as this assignment calls for
 
+// I could never get my data to work and I couldn't get Calvins code to post in browser so this is a great deal of guesswork
 
 
 $(document)ready.(function() {
 // DOM ready
 
-////////////// We need some templates - lets give it a shot -- album template, photo template, navigation bar template, and a button template at least I think /////////
+// We need some templates - lets give it a shot -- album template, photo template, navigation bar template, and a button template for starters //
 
 var photoTemplate = _.template($('#photoTmpl').html());
   // console.log("myPhotos: ", photoTemplate);
@@ -61,10 +62,50 @@ $('.main-container')on.('click', function(){
 });
 
 
+// need to loop through each one of the albums
+
+_.each('.album-one album', function(elem){
+  photoHTML += photoTemplate(elem);
+});
+
+$('.album-one album').append(photoHTML)
+  photoHTML = "";
+
+_.each('.album-two album', function(elem){
+  photoHTML += photoTemplate(elem);
+});
+
+$('.album-two album').append(photoHTML)
+  photoHTML = "";
+
+_.each('.album-three album', function(elem){
+  photoHTML += photoTemplate(elem);
+});
+
+$('.album-three album').append(photoHTML)
+  photoHTML = "";
+
+_.each('.album-four album', function(elem){
+  photoHTML += photoTemplate(elem);
+});
 
 
+$('.album-four album').append(photoHTML)
+  photoHTML = "";
 
+_.each('.album-five album', function(elem){
+  photoHTML += photoTemplate(elem);
+});
 
+$('.album-five album').append(photoHTML)
+  photoHTML = "";
+
+_.each('.album-six album', function(elem){
+  photoHTML += photoTemplate(elem);
+  });
+
+$('.album-six album').append(photoHTML)
+  photoHTML = "";
 
 
 
@@ -75,6 +116,7 @@ $('.main-container')on.('click', function(){
 
 });
 
+// this is the delete event that will remove when clicked
 
 // $('.delete').click(function (event) {
 //
@@ -82,7 +124,9 @@ $('.main-container')on.('click', function(){
 //
 // });
 //
-//
+
+// navagation click event here along with a prevent default behavior
+
 // $('nav a').on('click', function (event) {
 //   event.preventDefault();
 //
